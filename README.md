@@ -1,7 +1,7 @@
-# mamei-DGNN-DDI
-Source for paper DGNN-DDI is designed to a dual GNN for drug-drug interaction prediction based on molecular structure  and can provide explanations that are consistent with pharmacologists.
+# Étude d’un modèle de Graph Neural Network attentionnel pour la prédiction d’interactions médicamenteuses
+Code développé pendant le stage de L2 à l'Université d'Uppsala, complémetns aux travaux de Ma Mei.
 ## Note
-We have added comments to drugbank/data_preprocessing.py and drugbank/model.py. If you are interested in the technical details of preprocessing steps and algorithms, I think those comments would be helpful. 
+Quelques commentaires utilses à la compréhension du fonctionnement du modèle ont été ajoutés dans certains fichiers par le créateur du modèle.
 ## Requirements  
 numpy ==1.22.3          
 pandas  == 1.4.3           
@@ -15,7 +15,7 @@ torch-sparse == 0.6.14
 tqdm  ==   4.64.0  
 ## Step-by-step running:  
 
-- First,  run data_preprocessing.py using  ' data_preprocessing.py -d drugbank -o all`  
-  Running data_preprocessing.py convert the raw data into graph format.
+- Commencer par run data_preprocessing.py via la commande  ' data_preprocessing.py -d drugbank -o all`  
+  data_preprocessing.py convertit les données pures en graphes.
 
-- Second, run train.py using  ' train.py --fold 0 --save_model' 
+- Puis, run train.py via ' train.py --fold 0 --save_model' 
