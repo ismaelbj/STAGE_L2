@@ -2,7 +2,7 @@ import numpy as np
 from sklearn import metrics
 
 def do_compute_metrics(probas_pred, target):
-    pred = (probas_pred >= 0.5).astype(np.int)
+    pred = (probas_pred >= 0.5).astype(int)
     acc = metrics.accuracy_score(target, pred)
     auroc = metrics.roc_auc_score(target, probas_pred)
     f1_score = metrics.f1_score(target, pred)

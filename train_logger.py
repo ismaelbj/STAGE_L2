@@ -6,7 +6,7 @@ if sys.path[-1] != os.getcwd():
 import time
 import json
 
-from log.basic_logger import BasicLogger
+from basic_logger import BasicLogger
 
 def create_dir(dir_list):
     assert  isinstance(dir_list, list) == True

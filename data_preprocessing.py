@@ -301,7 +301,7 @@ if __name__ == '__main__':
     }
 
     dataset_file_name_map = {
-        'drugbank': ('data/drugbank.tab', '\t'),
+        'drugbank': ('drugbank.tab', '\t'),
 
     }
     args = parser.parse_args()
